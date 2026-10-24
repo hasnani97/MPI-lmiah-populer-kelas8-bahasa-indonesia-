@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MPI Bahasa Indonesia Kelas VIII | Artikel Ilmiah Populer</title>
+<style>
+:root{--navy:#17324d;--blue:#2563eb;--teal:#0f9d8a;--yellow:#ffd166;--coral:#ff6b6b;--cream:#fffaf0;--ink:#1f2937;--muted:#64748b;--line:#dbe5f0}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:linear-gradient(135deg,#e0f2fe,#fef3c7 55%,#fce7f3);color:var(--ink);min-height:100vh}
+header{background:linear-gradient(120deg,#17324d,#2563eb);color:#fff;padding:22px 16px;text-align:center}
+header .eyebrow{letter-spacing:2px;font-size:.78rem;font-weight:800;color:#bfdbfe}
+header h1{margin:8px auto;font-size:clamp(1.5rem,4vw,2.6rem);max-width:900px}
+header p{margin:6px auto;max-width:760px;color:#e0f2fe}
+main{max-width:1100px;margin:22px auto;padding:0 14px 40px}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:12px 0 18px}
+button,.btn{border:0;border-radius:12px;padding:11px 15px;font-weight:800;cursor:pointer;transition:.15s;font-size:.95rem}
+button:hover,.btn:hover{transform:translateY(-1px);filter:brightness(.98)}
+button:focus-visible,a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px}
+.primary{background:var(--blue);color:#fff}.teal{background:var(--teal);color:#fff}.gold{background:var(--yellow);color:#553b00}.light{background:#eaf2ff;color:#17324d}.danger{background:#fee2e2;color:#991b1b}
+.panel{background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.9);border-radius:22px;padding:clamp(16px,3vw,28px);box-shadow:0 12px 32px #17324d18;margin:14px 0}
+.hidden{display:none!important}.center{text-align:center}.small{font-size:.9rem;color:var(--muted)}.tag{display:inline-block;background:#dbeafe;color:#1d4ed8;border-radius:999px;padding:5px 10px;font-size:.8rem;font-weight:800;margin:3px}
+h2{color:var(--navy);margin-top:0}h3{color:#1d4ed8}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:13px}
+.card{background:#fff;border:2px solid var(--line);border-radius:17px;padding:18px;min-height:135px}.card .emoji{font-size:2rem}.card h3{margin:8px 0}.card p{margin:5px 0}
+.menu-card{cursor:pointer;text-align:left;width:100%;color:var(--ink);background:#fff;border:2px solid #dbeafe}.menu-card:hover{border-color:var(--blue)}
+.callout{border-left:5px solid var(--teal);background:#ecfdf5;padding:13px 16px;border-radius:10px;margin:14px 0}
+.example{background:#f8fafc;border:1px dashed #93c5fd;padding:14px;border-radius:12px;margin:10px 0}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.pill{border-radius:999px;background:#f1f5f9;padding:8px 12px;font-weight:700}
+.progress{height:10px;background:#e2e8f0;border-radius:99px;overflow:hidden;margin:10px 0}.progress span{display:block;height:100%;background:linear-gradient(90deg,#0f9d8a,#2563eb);width:0;transition:width .3s}
+label{font-weight:750;display:block;margin:12px 0 5px}input[type=text],textarea,select{width:100%;padding:12px;border:2px solid #cbd5e1;border-radius:10px;font:inherit;background:#fff}textarea{min-height:90px;resize:vertical}
+.options{display:grid;gap:9px;margin:14px 0}.option{padding:12px;border:2px solid #cbd5e1;border-radius:12px;background:#fff;text-align:left;color:var(--ink);font-weight:650}.option.selected{border-color:#2563eb;background:#eff6ff}.option.correct{border-color:#16a34a;background:#f0fdf4}.option.wrong{border-color:#dc2626;background:#fef2f2}
+.feedback{padding:12px;border-radius:12px;font-weight:700;margin:12px 0}.good{background:#dcfce7;color:#166534}.bad{background:#fee2e2;color:#991b1b}.neutral{background:#e0f2fe;color:#075985}
+footer{text-align:center;color:#475569;font-size:.85rem;padding:12px}
+table{width:100%;border-collapse:collapse;margin:12px 0}th,td{padding:10px;border:1px solid #cbd5e1;text-align:left;vertical-align:top}th{background:#dbeafe}
+@media(max-width:600px){.toolbar button{flex:1 1 42%}.panel{border-radius:16px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">MULTIMEDIA PEMBELAJARAN INTERAKTIF • FASE D</div>
+  <h1>🔎 Detektif Artikel Ilmiah Populer</h1>
+  <p>Baca • Analisis • Buktikan • Tulis | Bahasa Indonesia Kelas VIII</p>
+  <p><strong>SMP Negeri 12 Kolaka Utara</strong></p>
+</header>
+<main>
+  <div class="toolbar">
+    <button class="light" onclick="showScreen('home')">🏠 Beranda</button>
+    <button class="light" onclick="showScreen('materi')">📚 Materi</button>
+    <button class="light" onclick="showScreen('simulasi')">✍️ Simulasi</button>
+    <button class="light" onclick="startQuiz()">🧠 Kuis 10 Soal</button>
+    <button class="gold" onclick="toggleAudio()" id="audioBtn">🔊 Suara: Aktif</button>
+  </div>
+
+  <section id="home" class="panel center">
+    <div style="font-size:4rem">🕵️‍♀️ 📰 🔬</div>
+    <span class="tag">MISI BELAJAR</span><span class="tag">INTERAKTIF</span><span class="tag">BISA OFFLINE</span>
+    <h2>Selamat datang, Detektif Cilik!</h2>
+    <p>Dalam MPI ini, kamu akan menyelidiki artikel ilmiah populer: mengenali tujuan, ciri, dan strukturnya; membedakan fakta, opini, dan klaim yang membutuhkan bukti; lalu merancang artikel berdasarkan pengamatan.</p>
+    <div class="cards">
+      <button class="menu-card" onclick="showScreen('materi')"><div class="emoji">📚</div><h3>1. Jelajahi Materi</h3><p>Pelajari konsep dengan contoh sehari-hari.</p></button>
+      <button class="menu-card" onclick="showScreen('simulasi')"><div class="emoji">🧪</div><h3>2. Simulasi Penulis</h3><p>Susun rancangan artikel tentang lingkungan sekolah.</p></button>
+      <button class="menu-card" onclick="startQuiz()"><div class="emoji">🏆</div><h3>3. Tantangan Kuis</h3><p>Jawab 10 soal dengan tingkat kesulitan bertahap.</p></button>
+    </div>
+    <div class="callout" style="text-align:left"><strong>🎯 Tujuan belajar:</strong> Setelah menyelesaikan MPI, kamu dapat menjelaskan tujuan, ciri, dan struktur artikel ilmiah populer serta menilai apakah pernyataan didukung fakta atau bukti yang memadai.</div>
+    <button class="primary" onclick="showScreen('materi')">Mulai Petualangan ➜</button>
+  </section>
+
+  <section id="materi" class="panel hidden">
+    <span class="tag">MODUL 1</span><h2>📚 Mengenal Artikel Ilmiah Populer</h2>
+    <p>Artikel ilmiah populer adalah tulisan yang menyampaikan pengetahuan atau hasil kajian ilmiah dengan bahasa yang mudah dipahami pembaca umum.</p>
+    <div class="cards">
+      <div class="card"><div class="emoji">🎯</div><h3>Tujuan</h3><p>Memberi informasi, menjelaskan pengetahuan, dan membantu pembaca memahami suatu fenomena berdasarkan informasi yang dapat dipertanggungjawabkan.</p></div>
+      <div class="card"><div class="emoji">💬</div><h3>Ciri-ciri</h3><p>Bahasanya komunikatif; topiknya dekat dengan kehidupan; penjelasannya logis; menggunakan fakta/data atau sumber tepercaya; istilah ilmiah dijelaskan.</p></div>
+      <div class="card"><div class="emoji">🧱</div><h3>Struktur umum</h3><p><strong>Judul</strong> menarik dan sesuai topik; <strong>pembuka</strong> mengenalkan masalah; <strong>isi</strong> menjelaskan informasi dan bukti; <strong>penutup</strong> merangkum atau memberi saran.</p></div>
+    </div>
+    <h3>🔍 Bedakan fakta, opini, dan klaim</h3>
+    <table><thead><tr><th>Jenis</th><th>Makna</th><th>Contoh</th></tr></thead><tbody>
+    <tr><td><strong>Fakta</strong></td><td>Pernyataan yang dapat diperiksa kebenarannya.</td><td>“Dalam pengamatan kelas hari Senin, ditemukan 12 botol plastik di tempat sampah.” (jika benar-benar diamati dan dicatat)</td></tr>
+    <tr><td><strong>Opini</strong></td><td>Pendapat atau penilaian seseorang.</td><td>“Menurut saya, halaman sekolah akan lebih nyaman jika bebas sampah.”</td></tr>
+    <tr><td><strong>Klaim yang membutuhkan bukti</strong></td><td>Pernyataan yang terdengar meyakinkan, tetapi perlu data atau sumber untuk mengujinya.</td><td>“Membawa botol minum sendiri mengurangi sampah plastik hingga 80%.” Perlu data dan sumber yang jelas.</td></tr>
+    </tbody></table>
+    <div class="example"><strong>Contoh mini artikel</strong><h3>Botol Minum Isi Ulang untuk Mengurangi Sampah</h3><p><em>Pembuka:</em> Sampah plastik sekali pakai dapat ditemukan di berbagai tempat, termasuk lingkungan sekolah.</p><p><em>Isi:</em> Membawa botol minum isi ulang dapat menjadi salah satu pilihan untuk mengurangi penggunaan botol sekali pakai. Dampaknya dapat diamati dengan mencatat jumlah botol plastik yang dibuang sebelum dan sesudah kebiasaan tersebut diterapkan.</p><p><em>Penutup:</em> Kebiasaan sederhana ini layak dicoba dan dievaluasi melalui pengamatan yang teratur.</p></div>
+    <div class="callout"><strong>Ingat!</strong> Angka, grafik, atau kalimat yang terdengar ilmiah belum tentu benar. Tanyakan: siapa sumbernya, kapan data dikumpulkan, bagaimana cara mengukurnya, dan apakah bukti mendukung kesimpulan?</div>
+    <button class="teal" onclick="speak('Artikel ilmiah populer menyampaikan pengetahuan ilmiah dengan bahasa yang mudah dipahami. Periksa fakta, bedakan opini, dan mintalah bukti untuk klaim yang belum teruji.')">🔊 Dengarkan ringkasan</button>
+    <button class="primary" onclick="showScreen('simulasi')">Lanjut ke Simulasi ➜</button>
+  </section>
+
+  <section id="simulasi" class="panel hidden">
+    <span class="tag">MODUL 2</span><h2>✍️ Simulasi: Jadilah Penulis Artikel</h2>
+    <p><strong>Misi:</strong> Buat rancangan artikel ilmiah populer tentang sampah plastik di sekolah. Gunakan hasil pengamatan nyata jika tersedia. Data contoh di bawah ini hanya simulasi, bukan hasil penelitian sungguhan.</p>
+    <div class="example"><strong>Data latihan (simulasi):</strong> Tim siswa mengamati area kantin selama satu jam dan mencatat 30 bungkus plastik. Catatan ini hanya boleh disebut fakta jika kegiatan tersebut benar-benar dilakukan dan dicatat dengan tepat.</div>
+    <label for="judul">1. Judul artikel</label><input id="judul" type="text" placeholder="Contoh: Menyelidiki Sampah Plastik di Kantin Sekolah">
+    <label for="pembuka">2. Pembuka: masalah apa yang ingin kamu bahas?</label><textarea id="pembuka" placeholder="Jelaskan mengapa topik ini penting bagi pembaca."></textarea>
+    <label for="fakta">3. Fakta atau data yang dapat diperiksa</label><textarea id="fakta" placeholder="Tuliskan hasil pengamatan nyata atau sebutkan bahwa data masih perlu dikumpulkan."></textarea>
+    <label for="klaim">4. Klaim yang perlu diuji</label><textarea id="klaim" placeholder="Tuliskan satu pernyataan yang perlu dibuktikan dengan data."></textarea>
+    <label for="bukti">5. Bukti apa yang dibutuhkan untuk menguji klaim?</label><textarea id="bukti" placeholder="Misalnya jumlah sampah selama beberapa hari, cara menghitung, dan sumber data."></textarea>
+    <label for="penutup">6. Penutup atau saran</label><textarea id="penutup" placeholder="Tuliskan kesimpulan sementara atau saran yang masuk akal."></textarea>
+    <div class="toolbar" style="justify-content:flex-start">
+      <button class="primary" onclick="reviewDraft()">🔎 Periksa Rancangan</button>
+      <button class="teal" onclick="downloadDraft()">⬇️ Simpan Rancangan (.txt)</button>
+      <button class="light" onclick="clearDraft()">Kosongkan</button>
+    </div>
+    <div id="draftFeedback" class="feedback neutral hidden" aria-live="polite"></div>
+  </section>
+
+  <section id="quiz" class="panel hidden">
+    <span class="tag">MODUL 3</span><h2>🧠 Kuis Detektif: 10 Tantangan</h2>
+    <p>Jawab pertanyaan pilihan ganda. Setiap jawaban benar bernilai 10 poin. Baca penjelasan setelah memilih jawaban.</p>
+    <div class="progress"><span id="progressBar"></span></div>
+    <p class="small" id="quizCount">Soal 1 dari 10</p>
+    <div id="quizArea"></div>
+    <div id="quizFeedback" class="feedback hidden" aria-live="polite"></div>
+    <div class="toolbar"><button class="primary" id="nextBtn" onclick="nextQuestion()" disabled>Soal Berikutnya ➜</button></div>
+  </section>
+
+  <section id="result" class="panel center hidden">
+    <div style="font-size:4rem" id="resultEmoji">🏆</div><span class="tag">MISI SELESAI</span>
+    <h2 id="resultTitle">Hebat, Detektif!</h2>
+    <p id="resultScore" style="font-size:1.4rem;font-weight:900"></p>
+    <p id="resultMessage"></p>
+    <div class="cards">
+      <div class="card"><div class="emoji">💡</div><h3>Refleksi</h3><p>Apa satu hal yang akan kamu periksa sebelum mempercayai klaim di internet?</p></div>
+      <div class="card"><div class="emoji">📝</div><h3>Langkah berikutnya</h3><p>Gunakan hasil pengamatan nyata dan sumber tepercaya saat menulis artikel.</p></div>
+    </div>
+    <div class="toolbar"><button class="primary" onclick="startQuiz()">🔁 Ulangi Kuis</button><button class="teal" onclick="showScreen('simulasi')">✍️ Kembali ke Simulasi</button><button class="light" onclick="showScreen('home')">🏠 Beranda</button></div>
+    <button class="light" onclick="window.print()">🖨️ Cetak Hasil</button>
+  </section>
+
+  <section id="profil" class="panel hidden">
+    <h2>ℹ️ Tentang MPI</h2><p><strong>Media:</strong> Detektif Artikel Ilmiah Populer</p><p><strong>Mata pelajaran:</strong> Bahasa Indonesia, Kelas VIII, Fase D</p><p><strong>Satuan pendidikan:</strong> SMP Negeri 12 Kolaka Utara</p><p><strong>Penggunaan:</strong> File HTML ini dapat dibuka di Chrome atau Microsoft Edge tanpa koneksi internet. Fitur suara menggunakan kemampuan suara perangkat/peramban jika tersedia.</p>
+  </section>
+</main>
+<footer>MPI Bahasa Indonesia Kelas VIII • SMP Negeri 12 Kolaka Utara • Belajar kritis, menulis berbukti</footer>
+<script>
+let audioOn=true, current=0, score=0, answered=false, answers=[];
+const questions=[
+{q:"Apa tujuan utama artikel ilmiah populer?",o:["Membuat cerita khayalan tanpa penjelasan","Menyampaikan pengetahuan ilmiah dengan bahasa yang mudah dipahami","Mengajak pembaca membeli produk tertentu","Menampilkan pendapat pribadi saja"],a:1,e:"Artikel ilmiah populer menjelaskan pengetahuan atau kajian ilmiah dengan bahasa komunikatif untuk pembaca umum."},
+{q:"Bagian artikel yang mengenalkan masalah dan menarik minat pembaca adalah …",o:["Daftar pustaka saja","Penutup","Pembuka","Judul tabel"],a:2,e:"Pembuka memperkenalkan topik atau masalah dan membantu pembaca memahami konteks."},
+{q:"Kalimat mana yang paling jelas merupakan opini?",o:["Catatan pengamatan menunjukkan 8 gelas plastik terkumpul.","Menurut saya, taman sekolah adalah tempat paling nyaman untuk membaca.","Pengamatan dilakukan pada pukul 09.00.","Laporan mencantumkan tanggal 12 Agustus."],a:1,e:"Frasa “menurut saya” menunjukkan penilaian pribadi, sehingga kalimat itu merupakan opini."},
+{q:"Sebuah tulisan menyebut, “Minum air putih membuat semua siswa selalu mendapat nilai tinggi.” Apa langkah paling tepat?",o:["Langsung menyebarkan karena terdengar ilmiah","Menganggapnya fakta karena ada kata ‘semua’","Meminta bukti dan memeriksa sumber serta cara penelitian","Menghapus semua data yang tidak sesuai"],a:2,e:"Klaim luas seperti itu perlu bukti yang kuat, sumber tepercaya, dan metode yang jelas."},
+{q:"Manakah contoh fakta yang dapat diperiksa?",o:["Kantin sekolah paling menarik di daerah ini.","Sampah plastik pasti membuat semua orang sakit.","Pada pengamatan hari Selasa, kelompok mencatat 15 bungkus plastik.","Menurutku, semua siswa suka membaca."],a:2,e:"Pernyataan pengamatan bisa diperiksa melalui catatan, asalkan pengamatan benar-benar dilakukan."},
+{q:"Penulis ingin membuktikan bahwa tempat sampah terpilah mengurangi sampah campuran. Bukti yang paling membantu adalah …",o:["Komentar satu teman saja","Foto tempat sampah yang berwarna cerah","Catatan jumlah sampah campuran sebelum dan sesudah penerapan dengan cara ukur konsisten","Judul artikel yang menarik"],a:2,e:"Perbandingan data yang dikumpulkan secara konsisten lebih relevan untuk menguji klaim."},
+{q:"Mengapa artikel ilmiah populer sebaiknya menjelaskan istilah ilmiah yang sulit?",o:["Agar tulisan semakin sulit dibaca","Agar pembaca umum memahami informasi dengan tepat","Agar bukti tidak perlu ditampilkan","Agar artikel berubah menjadi cerita fiksi"],a:1,e:"Bahasa komunikatif dan penjelasan istilah membantu pembaca memahami gagasan ilmiah."},
+{q:"Perhatikan klaim: “Program membawa tumbler mengurangi sampah 80%.” Informasi apa yang paling penting ditanyakan?",o:["Apakah angka 80% ditulis dengan huruf besar?","Siapa yang mengukur, kapan, bagaimana, dan dari data apa angka itu diperoleh?","Apakah penulis memakai gambar berwarna?","Apakah judulnya terdiri dari lima kata?"],a:1,e:"Angka persentase harus memiliki sumber, metode pengukuran, rentang waktu, dan data yang dapat diperiksa."},
+{q:"Urutan struktur yang paling masuk akal untuk artikel populer sederhana adalah …",o:["Penutup – judul – pembuka – isi","Judul – pembuka – isi berisi penjelasan/bukti – penutup","Isi – penutup – judul – pembuka","Bukti – judul – penutup saja"],a:1,e:"Susunan umum adalah judul, pembuka, isi, lalu penutup. Struktur dapat bervariasi sesuai kebutuhan tulisan."},
+{q:"Kamu menemukan dua artikel dengan kesimpulan berbeda tentang sampah plastik. Apa tindakan paling kritis?",o:["Memilih artikel yang paling viral","Mempercayai artikel yang paling panjang","Memeriksa sumber, tanggal, metode, dan bukti dari keduanya","Menganggap keduanya pasti salah"],a:2,e:"Pembaca kritis membandingkan kualitas sumber dan bukti, bukan hanya popularitas atau panjang tulisan."}
+];
+function showScreen(id){document.querySelectorAll('main section').forEach(s=>s.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'});if(id==='materi')speak('Mari mengenal artikel ilmiah populer, tujuan, ciri, struktur, fakta, opini, dan klaim yang membutuhkan bukti.');}
+function speak(t){if(!audioOn)return;if('speechSynthesis'in window){window.speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.lang='id-ID';u.rate=.92;window.speechSynthesis.speak(u);}}
+function toggleAudio(){audioOn=!audioOn;document.getElementById('audioBtn').textContent=audioOn?'🔊 Suara: Aktif':'🔇 Suara: Mati';if(audioOn)speak('Suara diaktifkan. Selamat belajar!');else if('speechSynthesis'in window)window.speechSynthesis.cancel();}
+function startQuiz(){current=0;score=0;answered=false;answers=[];showScreen('quiz');renderQuestion();}
+function renderQuestion(){answered=false;let q=questions[current];document.getElementById('quizCount').textContent=`Soal ${current+1} dari ${questions.length}`;document.getElementById('progressBar').style.width=(current/questions.length*100)+'%';document.getElementById('quizArea').innerHTML=`<h3>${q.q}</h3><div class="options">${q.o.map((x,i)=>`<button class="option" onclick="chooseAnswer(${i})" id="opt${i}">${String.fromCharCode(65+i)}. ${x}</button>`).join('')}</div>`;document.getElementById('quizFeedback').className='feedback hidden';document.getElementById('nextBtn').disabled=true;document.getElementById('nextBtn').textContent=current===questions.length-1?'Lihat Hasil 🏆':'Soal Berikutnya ➜';}
+function chooseAnswer(i){if(answered)return;answered=true;let q=questions[current],ok=i===q.a;if(ok)score+=10;answers.push({selected:i,correct:ok});q.o.forEach((_,j)=>{let b=document.getElementById('opt'+j);b.disabled=true;if(j===q.a)b.classList.add('correct');if(j===i&&!ok)b.classList.add('wrong')});let fb=document.getElementById('quizFeedback');fb.className='feedback '+(ok?'good':'bad');fb.textContent=(ok?'🎉 Tepat sekali! 👏 ':'Belum tepat. Tetap semangat! 💪 ')+q.e;document.getElementById('nextBtn').disabled=false;document.getElementById('progressBar').style.width=((current+1)/questions.length*100)+'%';speak((ok?'Jawaban benar. Bagus sekali! ':'Belum tepat. ')+q.e);}
+function nextQuestion(){if(!answered)return;if(current<questions.length-1){current++;renderQuestion()}else showResult();}
+function showResult(){showScreen('result');document.getElementById('progressBar').style.width='100%';document.getElementById('resultScore').textContent=`Nilai kamu: ${score} / 100`;let emoji,title,msg;if(score>=80){emoji='🏆';title='Luar biasa, Detektif Ahli!';msg='Kamu sudah sangat baik dalam menilai informasi. Terus gunakan bukti dan sumber tepercaya.'}else if(score>=60){emoji='🌟';title='Bagus! Terus berlatih!';msg='Kamu sudah memahami dasar-dasarnya. Pelajari kembali bagian yang masih membingungkan.'}else{emoji='🌱';title='Awal yang baik!';msg='Tidak apa-apa jika belum sempurna. Baca materi lagi, lalu coba tantangan sekali lagi.'}document.getElementById('resultEmoji').textContent=emoji;document.getElementById('resultTitle').textContent=title;document.getElementById('resultMessage').textContent=msg;speak(`Misi selesai. Nilai kamu ${score} dari 100. ${msg}`);}
+function reviewDraft(){let fields=['judul','pembuka','fakta','klaim','bukti','penutup'];let filled=fields.filter(id=>document.getElementById(id).value.trim()).length;let box=document.getElementById('draftFeedback');box.className='feedback '+(filled===6?'good':'neutral');box.classList.remove('hidden');box.textContent=filled===6?'✅ Semua bagian sudah terisi. Periksa lagi apakah data benar-benar diamati, klaim memiliki bukti, dan penutup sesuai informasi.':'Kamu sudah mengisi '+filled+' dari 6 bagian. Lengkapi bagian yang kosong, lalu periksa apakah fakta dapat diverifikasi dan klaim didukung bukti.';speak(box.textContent);}
+function downloadDraft(){let labels={judul:'JUDUL',pembuka:'PEMBUKA',fakta:'FAKTA / DATA',klaim:'KLAIM YANG PERLU DIUJI',bukti:'BUKTI YANG DIBUTUHKAN',penutup:'PENUTUP / SARAN'};let out='RANCANGAN ARTIKEL ILMIAH POPULER\\nBahasa Indonesia Kelas VIII - SMP Negeri 12 Kolaka Utara\\n\\n';Object.keys(labels).forEach(id=>out+=labels[id]+'\\n'+(document.getElementById(id).value.trim()||'[Belum diisi]')+'\\n\\n');let blob=new Blob([out],{type:'text/plain;charset=utf-8'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='Rancangan_Artikel_Ilmiah_Populer.txt';a.click();URL.revokeObjectURL(a.href);}
+function clearDraft(){['judul','pembuka','fakta','klaim','bukti','penutup'].forEach(id=>document.getElementById(id).value='');document.getElementById('draftFeedback').classList.add('hidden');}
+</script>
+</body>
+</html>
